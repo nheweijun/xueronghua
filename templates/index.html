@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8" xmlns="http://www.w3.org/1999/html">
+<html>
+<head>
+	<title>雪绒花留言箱v0.1</title>
+    <link rel="icon" type="image/png" href="/static/favicon.ico">
+</head>
+<body>
+	<div align="center" style="margin-top: 50px;">
+		<img src="{{url_for('static', filename='xue.png') }}">
+	</div>
+
+	<div align="center" style="min-width: 10px">
+		<p>
+			GCESS雪绒花 深夜匿名留言 每次留言请留下艺名
+        </p>
+	</div>
+
+	<div align="center">
+		<textarea id="memo" cols="70" rows="25" >{{newmessage}}</textarea><br/>
+	</div>
+
+    <div align="center">
+        <form name="form1" method="POST">
+            <textarea id="memo" cols="70" rows="2" name="xliuyan" ></textarea><br/>
+            <input type="submit" name="liu" value="    留言    " size="40">
+            <input type="submit" name="liu" value="    刷新    " size="40">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
