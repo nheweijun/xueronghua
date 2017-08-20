@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -16,5 +16,10 @@ def index():
             return render_template('index.html', newmessage=m.show())
         return render_template('index.html', newmessage=m.show())
     return render_template('index.html', newmessage=m.show())
+
+@app.route('/index')
+def index2():
+    return render_template('index3.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
